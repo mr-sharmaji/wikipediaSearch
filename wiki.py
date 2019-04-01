@@ -28,10 +28,11 @@ if wikipedia.suggest(n) is not 0:
             if ch2 is 'Y' or ch2 is 'y':
                 ch3 = input("Enter The item from the list or it's position\n")
                 if ch3 in search or search[ch3-1] in search:
-                    try:
-                        summary = wikipedia.summary(search[ch3-1])
-                        print("summary")
-                    except:
+                    for ch3 in search:
+                       try:
+                           summary = wikipedia.summary(search[ch3-1])
+                           print("summary")
+                       except:
                         print("An Unexpected Error Has Occurred Please try again")
                 else:
                     print("We Are Sorry But we are not Able to find Your item in the wikipedia")
