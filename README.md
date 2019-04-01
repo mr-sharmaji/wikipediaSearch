@@ -6,3 +6,4 @@ A python script that helps you find your Wikipedia articles in a more effective 
 ```
  python wiki.py
 ```
+in Your terminal / command prompt
